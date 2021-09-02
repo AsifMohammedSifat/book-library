@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Book Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+        <h1 class="text-center text-primary">Search Your Book</h1>
+        <div class="input-group mb-3 w-50 mx-auto ">
+            <input type="text" id="search-text" class="border border-primary form-control"
+                placeholder="Search your book here..." aria-label="search-book" aria-describedby="button-search">
+            <button onclick="loadData()" class="fw-bold btn btn-outline-primary" type="button"
+                id="search-btn">Search</button>
+        </div>
+
+
+        <div id="total-result" class="text-center  w-50 mx-auto  text-primary">
+
+        </div>
+
+        <div id="loader">
+            Loading...
+        </div>
+        <div id="wrong-search" class="w-75 mx-auto ">
+
+        </div>
+        <div id="blank-search" class="w-75 mx-auto">
+
+        </div>
+        <section id="search-result" class="container">
+            <div id="results-div" class="row row-cols-1 row-cols-md-3 g-4 ">
+
+            </div>
+
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="js/book.js"></script>
+</body>
+
+</html>
